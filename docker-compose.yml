@@ -1,8 +1,6 @@
 services:
   test-web-app:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: "atulmaurya112/test-web-app:latest"
     container_name: test-web-app
     ports:
       - "7051:7051"
