@@ -14,7 +14,7 @@ public class Api {
 	@GetMapping("test")
 	public String getMethodName() {
 		System.out.println("Received request at /test endpoint");
-		return "Hey, I am running from test-web-app (" + value + ")";
+		return "Hey, I am running from test-web-app using (" + value + ")";
 	}	
 	
 }
