@@ -1,7 +1,7 @@
 services:
   test-web-app:
-    image: "atulmaurya112/web-app:latest"
-    container_name: web-app
+    image: "atulmaurya112/sample-web-app:latest"
+    container_name: sample-web-app
     ports:
       - "7051:7051"
     restart: unless-stopped
