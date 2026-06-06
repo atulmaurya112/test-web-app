@@ -6,28 +6,28 @@ pipeline {
         stage ('Clone') {
             steps {
                 script {
-                    jenkins_clone()
+                    jenkins_clone('https://github.com/atulmaurya112/test-web-app', 'main')
                 }
             }
         }
         stage ('Build') {
             steps {
                 script {
-                    jenkins_build()
+                    jenkins_build('web-app', 'latest')
                 }
             }
         }
         stage ('Push') {
             steps {
                 script {
-                    jenkins_build()
+                    jenkins_push('web-app', 'latest', 'atulmaurya112')
                 }
             }
         }
         stage ('Deploy') {
             steps {
                 script {
-                    jenkins_build()
+                    jenkins_deploy()
                 }
             }
         }
