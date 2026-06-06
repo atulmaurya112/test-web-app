@@ -13,14 +13,14 @@ pipeline {
         stage ('Build') {
             steps {
                 script {
-                    jenkins_build('web-app', 'latest')
+                    jenkins_build('sample-web-app', 'latest')
                 }
             }
         }
         stage ('Push') {
             steps {
                 script {
-                    jenkins_push('web-app', 'latest', 'atulmaurya112')
+                    jenkins_push('sample-web-app', 'latest', 'atulmaurya112')
                 }
             }
         }
